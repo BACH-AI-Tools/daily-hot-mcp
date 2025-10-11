@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "daily_hot_mcp"
-version = "1.6.7"
+name = "bach-daily-hot"
+version = "1.7.0"
 description = "🔥 基于 Model Context Protocol (MCP) 协议的全网热点趋势一站式聚合服务"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [
-    {name = "fancyboi"},
+    {name = "bachstudio"},
 ]
 keywords = ["mcp", "daily", "news", "hot", "trending", "aggregator"]
 classifiers = [
@@ -36,12 +36,12 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/fancyboi999/daily-hot-mcp"
-Repository = "https://github.com/fancyboi999/daily-hot-mcp"
-Issues = "https://github.com/fancyboi999/daily-hot-mcp/issues"
+Homepage = "https://github.com/rongquanfeng/daily-hot-mcp"
+Repository = "https://github.com/rongquanfeng/daily-hot-mcp"
+Issues = "https://github.com/rongquanfeng/daily-hot-mcp/issues"
 
 [project.scripts]
-daily-hot-mcp = "daily_hot_mcp.server:main"
+bach-daily-hot = "daily_hot_mcp.server:main"
 
 [project.optional-dependencies]
 dev = [

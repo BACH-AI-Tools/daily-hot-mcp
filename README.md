@@ -20,29 +20,29 @@
 
 ```bash
 # 基本启动
-uvx daily-hot-mcp
+uvx bach-daily-hot
 
 # 带 FireCrawl API 密钥启动
-uvx daily-hot-mcp --firecrawl-api-key your_api_key
+uvx bach-daily-hot --firecrawl-api-key your_api_key
 
 # 带自定义 RSS 源启动
-uvx daily-hot-mcp --custom-rss-url https://your-rss-feed.com/feed
+uvx bach-daily-hot --custom-rss-url https://your-rss-feed.com/feed
 
 # 同时指定多个参数
-uvx daily-hot-mcp --firecrawl-api-key your_api_key --custom-rss-url https://your-rss-feed.com/feed
+uvx bach-daily-hot --firecrawl-api-key your_api_key --custom-rss-url https://your-rss-feed.com/feed
 ```
 
 ### 方式二：从 PyPI 安装
 
 ```bash
-pip install daily-hot-mcp
-daily-hot-mcp
+pip install bach-daily-hot
+bach-daily-hot
 ```
 
 ### 方式三：从源码安装
 
 ```bash
-git clone https://github.com/fancyboi999/daily-hot-mcp.git
+git clone https://github.com/rongquanfeng/daily-hot-mcp.git
 cd daily-hot-mcp
 pip install -r requirements.txt
 pip install -e .
@@ -53,7 +53,7 @@ pip install -e .
 ### 命令行参数
 
 ```bash
-daily-hot-mcp --help
+bach-daily-hot --help
 ```
 
 可用参数：
@@ -65,16 +65,16 @@ daily-hot-mcp --help
 
 ```bash
 # 基本启动（使用默认配置）
-daily-hot-mcp
+bach-daily-hot
 
 # 带 FireCrawl API 密钥启动
-daily-hot-mcp --firecrawl-api-key your_api_key
+bach-daily-hot --firecrawl-api-key your_api_key
 
 # 带自定义 RSS 源启动
-daily-hot-mcp --custom-rss-url https://your-rss-feed.com/feed
+bach-daily-hot --custom-rss-url https://your-rss-feed.com/feed
 
 # 同时指定多个参数
-daily-hot-mcp --firecrawl-api-key your_api_key --custom-rss-url https://your-rss-feed.com/feed
+bach-daily-hot --firecrawl-api-key your_api_key --custom-rss-url https://your-rss-feed.com/feed
 ```
 
 服务器将在 `http://0.0.0.0:8000/mcp/` 启动。
@@ -108,7 +108,7 @@ python daily_hot_mcp/__main__.py
   "mcpServers": {
     "daily-hot": {
       "command": "uvx",
-      "args": ["daily-hot-mcp"]
+      "args": ["bach-daily-hot"]
     }
   }
 }
@@ -122,7 +122,7 @@ python daily_hot_mcp/__main__.py
     "daily-hot": {
       "command": "uvx",
       "args": [
-        "daily-hot-mcp",
+        "bach-daily-hot",
         "--firecrawl-api-key",
         "your_api_key",
         "--custom-rss-url",
@@ -139,7 +139,7 @@ python daily_hot_mcp/__main__.py
 {
   "mcpServers": {
     "daily-hot": {
-      "command": "daily-hot-mcp"
+      "command": "bach-daily-hot"
     }
   }
 }
@@ -151,10 +151,10 @@ python daily_hot_mcp/__main__.py
 
 ```bash
 # 使用 HTTP 模式启动服务
-daily-hot-mcp --transport http
+bach-daily-hot --transport http
 
 # 或指定主机和端口
-daily-hot-mcp --transport http --host 0.0.0.0 --port 8000
+bach-daily-hot --transport http --host 0.0.0.0 --port 8000
 ```
 
 然后配置 MCP 客户端：
