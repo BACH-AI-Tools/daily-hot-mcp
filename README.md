@@ -42,7 +42,7 @@ bach-daily-hot
 ### 方式三：从源码安装
 
 ```bash
-git clone https://github.com/rongquanfeng/daily-hot-mcp.git
+git clone https://github.com/BACH-AI-Tools/daily-hot-mcp.git
 cd daily-hot-mcp
 pip install -r requirements.txt
 pip install -e .

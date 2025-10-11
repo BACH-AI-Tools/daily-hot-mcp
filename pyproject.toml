@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bach-daily-hot"
-version = "1.7.0"
+version = "1.7.1"
 description = "🔥 基于 Model Context Protocol (MCP) 协议的全网热点趋势一站式聚合服务"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -36,9 +36,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rongquanfeng/daily-hot-mcp"
-Repository = "https://github.com/rongquanfeng/daily-hot-mcp"
-Issues = "https://github.com/rongquanfeng/daily-hot-mcp/issues"
+Homepage = "https://github.com/BACH-AI-Tools/daily-hot-mcp"
+Repository = "https://github.com/BACH-AI-Tools/daily-hot-mcp"
+Issues = "https://github.com/BACH-AI-Tools/daily-hot-mcp/issues"
 
 [project.scripts]
 bach-daily-hot = "daily_hot_mcp.server:main"
