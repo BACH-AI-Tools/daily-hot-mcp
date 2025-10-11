@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daily_hot_mcp"
+version = "1.6.7"
+description = "🔥 基于 Model Context Protocol (MCP) 协议的全网热点趋势一站式聚合服务"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    {name = "fancyboi"},
+]
+keywords = ["mcp", "daily", "news", "hot", "trending", "aggregator"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "mcp>=1.7.0",
+    "fastmcp>=0.2.0",
+    "firecrawl>=0.1.0",
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+    "lxml>=4.9.0",
+    "python-dateutil>=2.8.0",
+    "feedparser>=6.0.0",
+    "beautifulsoup4>=4.12.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/fancyboi999/daily-hot-mcp"
+Repository = "https://github.com/fancyboi999/daily-hot-mcp"
+Issues = "https://github.com/fancyboi999/daily-hot-mcp/issues"
+
+[project.scripts]
+daily-hot-mcp = "daily_hot_mcp.server:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["daily_hot_mcp*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true 
